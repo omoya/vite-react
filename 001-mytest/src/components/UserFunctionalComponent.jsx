@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 
-export default function UserFunctionalComponent() {
-  const [name, setName] = useState("John");
-  const [age, setAge] = useState(25);
+export default function UserFunctionalComponent({
+  children,
+  initialName,
+  initialAge,
+}) {
+  const [name, setName] = useState(initialName);
+  const [age, setAge] = useState(initialAge);
 
   useEffect(() => {
     async function fetchData() {

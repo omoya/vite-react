@@ -7,8 +7,14 @@ function App() {
   return (
     <>
       <Car></Car>
-      <UserClassComponent></UserClassComponent>
-      <UserFunctionalComponent></UserFunctionalComponent>
+      <UserClassComponent
+        initialName="John"
+        initialAge={25}
+      ></UserClassComponent>
+      <UserFunctionalComponent
+        initialName="John"
+        initialAge={25}
+      ></UserFunctionalComponent>
     </>
   );
 }

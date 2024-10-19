@@ -2,8 +2,8 @@ import { Component } from "react";
 
 export default class UserClassComponent extends Component {
   state = {
-    name: "John",
-    age: 25,
+    name: this.props.initialName,
+    age: this.props.initialAge,
   };
 
   render() {
