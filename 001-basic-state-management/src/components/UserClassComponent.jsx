@@ -7,14 +7,6 @@ export default class UserClassComponent extends Component {
     age: this.props.initialAge,
   };
 
-  async componentDidMount() {
-    const user = await fetch("https://randomuser.me/api/")
-      .then((response) => response.json())
-      .then((data) => {
-        this.setState({ name: data.results[0].name.first });
-      });
-  }
-
   render() {
     return (
       <div className="wrapper">

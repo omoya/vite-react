@@ -8,17 +8,6 @@ export default function UserFunctionalComponent({
   const [name, setName] = useState(initialName);
   const [age, setAge] = useState(initialAge);
 
-  useEffect(() => {
-    async function fetchData() {
-      const user = await fetch("https://randomuser.me/api/")
-        .then((response) => response.json())
-        .then((data) => {
-          setName(data.results[0].name.first);
-        });
-    }
-    fetchData();
-  }, []);
-
   return (
     <div className="wrapper">
       <p className="descriptor">I am a function</p>
