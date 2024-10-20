@@ -5,7 +5,7 @@ export default function ChildFunctionalComponent({ children }) {
   const [state] = useContext(GlobalState);
   return (
     <>
-      <p>I still remember when grandpa said {state.wiseSentence}</p>
+      <p>I still remember when grandpa said "{state.wiseSentence}"</p>
     </>
   );
 }
