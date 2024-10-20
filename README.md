@@ -10,4 +10,4 @@ Tips to take advantage of this repo:
 
 Most of the things that I am explaining and coding here are inspired by the hiperuseful tutorial of Midudev. Follow it at
 youtube.com/watch?v=7iobxzd_2wY](youtube.com/watch?v=7iobxzd_2wY)
-You won't regret it... unless you do not know spanish :sweat_smile:
+You won't regret it... unless you do not understand spanish :sweat_smile:
