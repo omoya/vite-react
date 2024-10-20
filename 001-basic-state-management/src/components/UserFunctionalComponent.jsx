@@ -20,13 +20,16 @@ export default function UserFunctionalComponent({
   }, []);
 
   return (
-    <>
-      <p>I am a function</p>
-      <h1>{name}</h1>
-      <h2>{age}</h2>
-      <button onClick={() => setAge(Math.floor(Math.random(1) * 100))}>
+    <div className="wrapper">
+      <p className="descriptor">I am a function</p>
+      <h1 className="userName">{name}</h1>
+      <h2 className="userAge">{age}</h2>
+      <button
+        className="button"
+        onClick={() => setAge(Math.floor(Math.random(1) * 100))}
+      >
         Change Age
       </button>
-    </>
+    </div>
   );
 }
