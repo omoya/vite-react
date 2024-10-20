@@ -1,19 +1,13 @@
 import "./App.css";
-import UserClassComponent from "./components/UserClassComponent.jsx";
-import UserFunctionalComponent from "./components/UserFunctionalComponent.jsx";
-
+import GlobalStateProvider from "./context/globalStateProvider.jsx";
+import GrandParentFunctionalComponent from "./components/GrandParentFunctionalComponent.jsx";
+import ChildFunctionalComponent from "./components/ChildFunctionalComponent.jsx";
 function App() {
   return (
-    <>
-      <UserClassComponent
-        initialName="John"
-        initialAge={25}
-      ></UserClassComponent>
-      <UserFunctionalComponent
-        initialName="John"
-        initialAge={25}
-      ></UserFunctionalComponent>
-    </>
+    <GlobalStateProvider>
+      <h1>THE PAST</h1>
+      <GrandParentFunctionalComponent></GrandParentFunctionalComponent>
+    </GlobalStateProvider>
   );
 }
 
